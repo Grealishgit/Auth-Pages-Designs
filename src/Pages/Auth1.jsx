@@ -9,9 +9,11 @@ const Auth1 = () => {
     const [shoPassword, setShowPassword] = useState(false);
     return (
         <div className='min-h-screen justify-center bg-stone-200 flex items-center'>
-            <div className='md:w-250 w-85 flex min-h-full shadow-lg shadow-black'>
+            <div className='md:w-270 w-85 flex min-h-full shadow-lg shadow-black'>
+
                 {isSign ? (
                     <div className='md:w-180 md:p-15 p-8 h-auto bg-white'>
+                        <div className='w-7 h-7 cursor-pointer rounded-full bg-stone-300 relative -top-13 -left-12' />
                         <h2 className='font-semibold text-start text-2xl'>Welcome to the community</h2>
                         <p>Already have an Account? <span onClick={() => setIsSign(!isSign)} className='underline font-semibold cursor-pointer'>Log in</span> </p>
                         <div className='flex mt-3 gap-3 flex-col'>
@@ -69,7 +71,8 @@ const Auth1 = () => {
                         </div>
                     </div>
                 ) : (
-                    <div className='w-180 md:p-15 p-8 h-auto bg-white'>
+                        <div className='w-180 md:p-15 p-8 h-auto bg-white'>
+                            <div className='w-7 h-7 cursor-pointer rounded-full bg-stone-300 relative -top-13 -left-12' />
                         <h2 className='font-semibold text-start text-2xl'>Welcome to the community</h2>
                         <p>Don't have an Account? <span onClick={() => setIsSign(!isSign)} className='underline font-semibold cursor-pointer'>Sign Up</span> </p>
                         <div className='flex mt-3 gap-3 flex-col'>
