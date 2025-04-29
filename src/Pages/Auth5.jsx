@@ -47,11 +47,11 @@ const Auth5 = () => {
                         <form className='w-full border border-gray-400 p-5 bg-white rounded-lg'>
                             <div className='flex flex-col gap-2'>
                                 <label>Your Email</label>
-                                <input type="email" className='w-full py-2 rounded-lg border border-gray-300' />
+                                <input type="email" className='w-full pl-4 py-2 rounded-lg border border-gray-300' />
                             </div>
                             <div className='flex mt-4 flex-col gap-2'>
                                 <label>Your Password</label>
-                                <input type="password" className='w-full py-2 rounded-lg border border-gray-300' />
+                                <input type="password" className='w-full pl-4 py-2 rounded-lg border border-gray-300' />
                             </div>
                             <button className='w-full py-2.5 mt-4 bg-gray-500 cursor-pointer text-white text-lg rounded-full'>
                                 Log in
