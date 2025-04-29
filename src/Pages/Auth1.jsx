@@ -8,12 +8,12 @@ const Auth1 = () => {
     const [isSign, setIsSign] = useState(false);
     const [shoPassword, setShowPassword] = useState(false);
     return (
-        <div className='min-h-screen justify-center bg-stone-200 flex items-center'>
-            <div className='md:w-270 w-85 flex min-h-full shadow-lg shadow-black'>
+        <div className='min-h-screen justify-center bg-stone-200 pt-20 flex items-center'>
+            <div className='md:w-270 w-85 flex min-h-full  shadow-lg shadow-black'>
 
                 {isSign ? (
                     <div className='md:w-180 md:p-15 p-8 h-auto bg-white'>
-                        <div className='w-7 h-7 cursor-pointer rounded-full bg-stone-300 relative -top-13 -left-12' />
+                        <div className='w-7 h-7 cursor-pointer rounded-full bg-stone-300 relative md:-top-13 -top-6 md:-left-12 -left-7' />
                         <h2 className='font-semibold text-start text-2xl'>Welcome to the community</h2>
                         <p>Already have an Account? <span onClick={() => setIsSign(!isSign)} className='underline font-semibold cursor-pointer'>Log in</span> </p>
                         <div className='flex mt-3 gap-3 flex-col'>
@@ -72,7 +72,7 @@ const Auth1 = () => {
                     </div>
                 ) : (
                         <div className='w-180 md:p-15 p-8 h-auto bg-white'>
-                            <div className='w-7 h-7 cursor-pointer rounded-full bg-stone-300 relative -top-13 -left-12' />
+                            <div className='w-7 h-7 cursor-pointer rounded-full bg-stone-300 relative md:-top-13 -top-6 md:-left-12 -left-7' />
                         <h2 className='font-semibold text-start text-2xl'>Welcome to the community</h2>
                         <p>Don't have an Account? <span onClick={() => setIsSign(!isSign)} className='underline font-semibold cursor-pointer'>Sign Up</span> </p>
                         <div className='flex mt-3 gap-3 flex-col'>
@@ -100,10 +100,7 @@ const Auth1 = () => {
                             </div>
                             <input type={shoPassword ? "text" : "password"} placeholder='password' className='w-full border pl-4 border-gray-300 rounded-lg py-2' />
 
-                        </div>
-
-
-
+                            </div>
                         <div className='mt-5'>
                             <button className='md:px-5 px-12 py-3 font-semibold text-white rounded-full cursor-pointer bg-stone-300'>Login to Your Account</button>
                             <p className='text-gray-700 font-semibold text-sm mt-4' >Already have an account? <span onClick={() => setIsSign(!isSign)} className='underline cursor-pointer'>Sign Up</span> </p>
