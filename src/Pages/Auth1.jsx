@@ -9,10 +9,10 @@ const Auth1 = () => {
     const [shoPassword, setShowPassword] = useState(false);
     return (
         <div className='min-h-screen justify-center bg-stone-200 pt-20 flex items-center'>
-            <div className='md:w-270 w-85 flex min-h-full  shadow-lg shadow-black'>
+            <div className='md:w-270 w-85 flex min-h-full  shadow-lg  shadow-black'>
 
                 {isSign ? (
-                    <div className='md:w-180 md:p-15 p-8 h-auto bg-white'>
+                    <div className='md:w-180 md:p-15 p-8 h-auto rounded-br-full  bg-white'>
                         <div className='w-7 h-7 cursor-pointer rounded-full bg-stone-300 relative md:-top-13 -top-6 md:-left-12 -left-7' />
                         <h2 className='font-semibold text-start text-2xl'>Welcome to the community</h2>
                         <p>Already have an Account? <span onClick={() => setIsSign(!isSign)} className='underline font-semibold cursor-pointer'>Log in</span> </p>
